@@ -1,4 +1,5 @@
 "use client";
+import { RiErrorWarningFill } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -102,7 +103,7 @@ export default function Header() {
         </Link>
         <Link href="/" className="lg:hidden ">
           <Image
-            src="/codeteam.png"
+            src="/Code.png"
             width={40}
             height={40}
             className="rounded-md"
@@ -110,11 +111,13 @@ export default function Header() {
           />
         </Link>
         {/* search input */}
-        <input
+        <p className="text-red-700 underline text-xs text-wrap lg:text-sm">Interns only ! No Deletion</p>
+        
+        {/* <input
           type="text"
           placeholder="search"
           className="bg-gray-50 border border-gray-200 rounded text-sm w-full py-2 px-4 max-w-[210px]"
-        />
+        /> */}
         {/* menu item */}
 
         {session ? (
